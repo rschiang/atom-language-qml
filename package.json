@@ -6,13 +6,13 @@
     "atom": "*",
     "node": "*"
   },
-  "homepage": "http://atom.github.io/language-qml/",
+  "homepage": "http://rschiang.github.io/atom-language-qml/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/language-qml.git"
+    "url": "https://github.com/rschiang/atom-language-qml.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atom/language-qml/issues"
+    "url": "https://github.com/rschiang/atom-language-qml/issues"
   }
 }
