@@ -1,6 +1,7 @@
 'fileTypes': [
   'qml'
   'qmlproject'
+  'qbs'
 ]
 'name': 'QML'
 'patterns': [
