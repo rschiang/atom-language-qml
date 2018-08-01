@@ -1,0 +1,76 @@
+'.source.qml':
+    'ternary':
+        'prefix': '?'
+        'body': '? $1 : $2'
+    'alias':
+        'prefix': 'alias'
+        'body': 'property alias ${1:name}: ${2:val}'
+    'anchors_all':
+        'prefix': 'anchors.all'
+        'body': """
+            anchors.left: ${1:parent}.left
+            anchors.top: ${1:parent}.top
+            anchors.right: ${1:parent}.right
+            anchors.bottom: ${1:parent}.bottom
+            """
+    'anchors_centerIn':
+        'prefix': 'anchors.centerIn'
+        'body': 'anchors.centerIn: ${1:parent}'
+    'anchors_fill':
+        'prefix': 'anchors.fill'
+        'body': 'anchors.fill: ${1:parent}'
+    'anchors_single':
+        'prefix': 'anchors'
+        'body': 'anchors.${1}: ${2:parent}.${3}'
+    'anchors_horizontal':
+        'prefix': 'anchors.horizontalCenter'
+        'body': 'anchors.horizontalCenter: ${1:parent}.horizontalCenter'
+    'anchors_vertical':
+        'prefix': 'anchors.verticalCenter'
+        'body': 'anchors.horizontalCenter: ${1:parent}.verticalCenter'
+    'connections':
+        'prefix': 'Connections'
+        'body': """
+        Connections {
+            target: ${1}
+            on${2}: ${3}
+        }
+        """
+    'function':
+        'prefix': 'function'
+        'body': """
+        function ${1:function_name}(${2:argument}) {
+            ${0:// body...}
+        }
+        """
+    'hexColor':
+        'prefix': 'color'
+        'body': 'color: "#${1}"'
+    'layout_fill':
+        'prefix': 'Layout'
+        'body': """
+        Layout.fillWidth: ${1:true}
+        Layout.fillHeight: ${2:true}
+        """
+    'console_log':
+        'prefix': 'log'
+        'body': 'console.log($1)'
+    'mouse_area':
+        'prefix': 'MouseArea'
+        'body': """
+        MouseArea {
+            anchors.fill: parent
+            cursorShape: Qt.PointingHandCursor
+            hoverEnabled: false
+            onEntered: {}
+            onExited: {}
+            onWheel: {}
+            onClicked: ${1}
+        }
+        """
+    'onCompleted':
+        'prefix': 'onCompleted'
+        'body': 'Component.onCompleted: ${1}'
+    'property':
+        'prefix': 'property'
+        'body': 'property ${1:var} ${2:name}'
