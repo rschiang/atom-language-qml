@@ -27,7 +27,7 @@
         'body': 'anchors.horizontalCenter: ${1:parent}.horizontalCenter'
     'anchors_vertical':
         'prefix': 'anchors.verticalCenter'
-        'body': 'anchors.horizontalCenter: ${1:parent}.verticalCenter'
+        'body': 'anchors.verticalCenter: ${1:parent}.verticalCenter'
     'connections':
         'prefix': 'Connections'
         'body': """
